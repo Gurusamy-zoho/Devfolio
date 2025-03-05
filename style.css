@@ -4,6 +4,14 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+body{
+    /* background: linear-gradient(to bottom,#2a2a6b, #020024, #09092a); */
+    background: linear-gradient(to bottom,#030029, #4b4b8f, #1c1c4a);
+
+
+
+}
 .menuc.active{
     display: flex;
     left: 30px;
@@ -12,6 +20,7 @@
 
 .auto-type {
     display: inline-block;
+    color: rgb(98,0,234);
 }
 
 .typed-cursor {
@@ -34,12 +43,21 @@
     margin: auto;
     padding: 20px;
     border-radius: 10px;
+ 
+
+    background: linear-gradient(to bottom, #202040, #2a2a5a);
+    border: 1px solid #5e5eb5;
+
+
+
+
    
 }
 
 .heading {
     text-align: center;
     color:white;
+    font-weight: 900;
     font-size: xx-large;
 }
 
@@ -59,7 +77,9 @@
     margin: 20px;
     padding: 15px;
     border: 1px solid white;
-    background-color: black;
+    background-color: #1a1a38;
+    border: 1px solid #4b4b8f; 
+    box-shadow: 0px 0px 10px rgba(75, 75, 143, 0.5); 
     border-radius: 10px;
     box-shadow: 0 0 0 3px gray; 
 }
@@ -145,8 +165,8 @@
         .Limg, .Rimg {
             background-color: white;
             border-radius: 50%;
-            width: 35px;
-            height: 35px;
+            width: 45px;
+            height: 45px;
             display: inline-flex;
             justify-content: center;
             align-items: center;
@@ -161,14 +181,14 @@
         .Limgin, .Rimgin {
             background-color:rgb(98,0,234);
             border-radius: 50%;
-            width: 32px;
-            height: 32px;
+            width: 40px;
+            height: 40px;
         }
 
         .timeline::after {
             content: '';
             position: absolute;
-            width: 6px;
+            width: 4px;
             height: 100%;
             background-color: rgb(98,0,234);
             top: 0;
@@ -228,6 +248,7 @@
         }
         #education-heading{
             font-weight: 900;
+            font-size: xx-large;
             color: white;
 
         }
@@ -237,5 +258,8 @@
         }
 
        .education-heading-div{
+      
         text-align: center;
+        margin-top: 100px;
+       
        }

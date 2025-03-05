@@ -10,15 +10,15 @@
 
 
 </head>
-<body class="bg-aliceblue-700">
+<body>
 
     <!-- ✅ Navigation -->
-    <nav class="relative flex py-4 px-5 justify-between bg-blue-700 text-white">
+    <nav class=" about fixed w-full top-0 left-0 flex py-4 px-5 justify-between bg-white/20 backdrop-blur text-white z-50">
         <h1 class="text-xl font-bold">Devfolio</h1>
         
         <!-- ✅ Desktop Menu -->
         <ul class="hidden sm:flex gap-5">
-            <li class="cursor-pointer hover:text-blue-300"><a href="#sec">About</a></li>
+            <li class="cursor-pointer hover:text-blue-300"><a href="#skill">About</a></li>
             <li class="cursor-pointer hover:text-blue-300">Skills</li>
             <li class="cursor-pointer hover:text-blue-300">Projects</li>
             <li class="cursor-pointer hover:text-blue-300">Education</li>
@@ -35,22 +35,22 @@
 
         <!-- ✅ Mobile Menu (Animated) -->
         <ul id="mobile-menu" class="absolute bg-white text-black left-[-100%] top-[80px] w-3/4 p-5 flex flex-col gap-5 shadow-lg transition-all duration-300 ease-in-out sm:hidden">
-            <li class="cursor-pointer hover:text-blue-700">About</li>
+            <li class="cursor-pointer hover:text-blue-700"><a href=".about">About</a></li>
             <li class="cursor-pointer hover:text-blue-700">Skills</li>
             <li class="cursor-pointer hover:text-blue-700">Projects</li>
-            <li class="cursor-pointer hover:text-blue-700">Education</li>
+            <a href=".timeline" class="cursor-pointer hover:text-blue-700">Education</a>
             <li class="cursor-pointer hover:text-blue-700">Contact</li>
         </ul>
     </nav>
 
     
-     <section class="flex flex-col sm:flex-row items-center justify-center py-20 px-20 bg-white-900 ">
+     <section class="flex max-w-full flex-col sm:flex-row items-center justify-center py-20 px-20 bg-white-900 ">
         
-        <div class="w-full sm:w-1/2 text-center sm:text-left">
-            <h1 class="text-3xl font-bold">Hi, I am</h1>
-            <h1 class="text-3xl font-bold text-blue-700">Gurusamy G</h1>
-            <h3 class="text-xl text-red-700 font-bold" >I'm a <span class="auto-type"></span></h3>
-            <p class="mt-3 text-gray-700 leading-relaxed">
+        <div class="max-w-full sm:w-1/2 text-center sm:text-left">
+            <h1 class="text-5xl font-bold text-white py-3">Hi, I am</h1>
+            <h1 class="text-5xl font-semibold text-white py-3">Gurusamy G</h1>
+            <h3 class="text-3xl text-white font-bold" >I'm a <span class="auto-type"></span></h3>
+            <p class="mt-3 text-gray-700 leading-relaxed text-white">
                 A skilled Frontend Developer with a strong portfolio, passionate about staying updated on frontend tech. 
                 Collaborative and committed to quality, I thrive in dynamic teams. Eager to contribute creativity and 
                 bring innovative ideas to life.
@@ -62,12 +62,12 @@
 
         
         <div class="w-full sm:w-1/2 flex justify-center mt-10 sm:mt-0">
-            <img src="python_logo_icon_144958.png"  class="w-48 h-48 sm:w-64 sm:h-64 rounded-full shadow-lg">
+            <img src="japense art.jpg"  class="w-48 h-48 sm:w-64 sm:h-64 rounded-full shadow-lg">
         </div>
     </section>
 
 
-    <div class="skillContainer bg-gray-500">
+    <div class="skillContainer">
         <div class="heading">
             <h1>Skills</h1>
         </div>
@@ -101,7 +101,7 @@
     
 </div>
 
-<div class="education">
+<div class="education bg-aliceblue-800">
         <div class="education-heading-div">
             <h1 id="education-heading">Education</h1>
             <p id="education-para">My education journey has shapped my skills and knowledge</p>
@@ -182,3 +182,9 @@
 
 </body>
 </html>
+
+
+
+
+
+

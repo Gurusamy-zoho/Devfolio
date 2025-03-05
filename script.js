@@ -11,7 +11,7 @@ menu.addEventListener('click', () => {
 
 
 let typed = new Typed(".auto-type", {
-    strings: ["Programmer", "Developer"],
+    strings: ["Programmer", "Web Developer"],
     typeSpeed: 100,
     backSpeed: 30,
     loop: true,
