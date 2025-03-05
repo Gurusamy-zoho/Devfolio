@@ -1,0 +1,108 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Grid</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <style>
+        body {
+            background-color: gray;
+            font-family: Arial, sans-serif;
+        }
+
+        .skillContainer {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .heading {
+            text-align: center;
+            color: white;
+        }
+
+        .skill {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .web-skill, .other-skill {
+            width: 45%;
+            height: fit-content;
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid white;
+            background-color: black;
+            border-radius: 10px;
+        }
+
+        .web-skill h1, .other-skill h1 {
+            color: white;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .web-skill-box {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .web-skill span, .other-skill span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid white;
+            color: white;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        .web-skill span i, .other-skill span i {
+            font-size: 30px;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="skillContainer">
+        <div class="heading">
+            <h1>Skills</h1>
+            <p>Here are some of my skills that I have learned.</p>
+        </div>
+
+        <div class="skill">
+            <div class="web-skill">
+                <h1>Web Development</h1>
+                <div class="web-skill-box">
+                    <span><i class="devicon-python-plain"></i> Python</span>
+                    <span><i class="devicon-java-plain"></i> Java</span> 
+                    <span><i class="devicon-javascript-plain"></i> JavaScript</span>
+                    <span><i class="devicon-html5-plain"></i> HTML</span>
+                    <span><i class="devicon-css3-plain"></i> CSS</span>
+                    <span><i class="devicon-mysql-plain"></i> MySQL</span>
+                </div>
+            </div>
+
+            <div class="other-skill">
+                <h1>Other Tools</h1>
+                <div class="web-skill-box">
+                    <span><i class="devicon-git-plain"></i> Git</span>
+                    <span><i class="devicon-github-original"></i> GitHub</span>
+                    <span><i class="devicon-vscode-plain"></i> VS Code</span>
+                    <span><i class="devicon-vercel-original"></i> Vercel</span>
+                    <span><i class="devicon-postman-plain"></i> Postman</span>
+                    <span><i class="devicon-googlecloud-plain"></i>Devtool</span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
