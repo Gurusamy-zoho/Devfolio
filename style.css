@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.menuc.active{
+    display: flex;
+    left: 30px;
+    transition: all 0.2s;
+}
+
+.skill-type{
+    text-decoration: underline;
+}
