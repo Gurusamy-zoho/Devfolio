@@ -10,6 +10,232 @@
     transition: all 0.2s;
 }
 
-.skill-type{
-    text-decoration: underline;
+.auto-type {
+    display: inline-block;
 }
+
+.typed-cursor {
+    display: inline-block;
+    transform: translateX(-2px); 
+    animation: moveCursor 0.7s infinite alternate;
+}
+
+@keyframes moveCursor {
+    0% { opacity: 0; } 
+    75% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.skill-Div{
+  
+}
+.skillContainer {
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+   
+}
+
+.heading {
+    text-align: center;
+    color:white;
+    font-size: xx-large;
+}
+
+.skill-para{
+    color: white;
+    text-align: center;
+}
+.skill {
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+.web-skill, .other-skill {
+    width: 45%;
+    height: fit-content;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 0 3px gray; 
+}
+
+.web-skill h1, .other-skill h1 {
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+.web-skill-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.web-skill span, .other-skill span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.web-skill span i, .other-skill span i {
+    font-size: 30px;
+    margin-right: 8px;
+}
+
+
+.timeline{
+            position: relative;
+            width:600px;
+            margin: 100px auto;
+        }
+
+        .text-box {
+            padding: 20px 30px;
+            background-color: rgb(31, 31, 46);
+            position: relative;
+            border-radius: 6px;
+            font-size: 15px;
+            color: white;
+            width: fit-content;
+        }
+
+        .container {
+            padding: 10px 50px;
+            position: relative;
+            opacity: 0;
+            transform: translateY(-30px);
+            animation: movedown 1s linear forwards;
+        }
+
+        @keyframes movedown {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+
+        .container:nth-of-type(1) { animation-delay: 0s; }
+        .container:nth-of-type(2) { animation-delay: 1s; }
+        .container:nth-of-type(3) { animation-delay: 2s; }
+        .container:nth-of-type(4) { animation-delay: 3s; }
+        .container:nth-of-type(5) { animation-delay: 4s; }
+
+        .left-container {
+            left: -50%;
+        }
+
+        .right-container {
+            left: 50%;
+        }
+
+        .Limg, .Rimg {
+            background-color: white;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 32px;
+            z-index: 50;
+        }
+
+        .Limg { right: -20px; }
+        .Rimg { left: -20px; }
+
+        .Limgin, .Rimgin {
+            background-color:rgb(98,0,234);
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 100%;
+            background-color: rgb(98,0,234);
+            top: 0;
+            left: 50%;
+            margin-left: -3px;
+            z-index: -1;
+            animation: moveline 4s linear forwards;
+        }
+
+        @keyframes moveline {
+            0% { height: 0; }
+            100% { height: 100%; }
+        }
+
+        .text-box h2 {
+            font-weight: 600;
+        }
+
+        .text-box small {
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .left-arrow, .right-arrow {
+            height: 0;
+            width: 0;
+            position: absolute;
+            top: 28px;
+            z-index: 1;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+        }
+
+        .left-arrow {
+            border-left: 16px solid rgb(31, 31, 46);
+            right: -15px;
+        }
+
+        .right-arrow {
+            border-right: 15px solid rgb(31, 31, 46);
+            left: -15px;
+        }
+
+        .text-box .year{
+            color: grey;
+            margin-bottom: 20px;
+    
+        }
+
+        .text-box small{
+          font-size: 16px;
+          color: grey;
+        }
+
+        .text-box .grade{
+            margin-bottom: 10px;
+        }
+        #education-heading{
+            font-weight: 900;
+            color: white;
+
+        }
+
+        #education-para{
+          color: white;   
+        }
+
+       .education-heading-div{
+        text-align: center;
+       }
