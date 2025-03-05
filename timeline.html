@@ -1,0 +1,441 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #2e364a;
+        }
+
+        .timeline{
+            position: relative;
+            max-width: 1200px;
+            margin: 100px auto;
+        }
+
+        .text-box{
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        .container{
+            padding: 10px 50px;
+            position: relative;
+            width: 50%;
+            animation: movedown 1s linear forwards;
+            opacity: 0;
+        }
+
+        @keyframes movedown{
+            0%{
+                opacity: 1;
+                transform: translate(-30px);
+            }
+
+            100%{
+                opacity: 1;
+                transform: translate(0px);
+            }
+        }
+
+        .container:nth-child(1){
+            animation-delay: 0;
+        }
+
+        .container:nth-child(2){
+            animation-delay: 1;
+        }
+        .container:nth-child(3){
+            animation-delay: 2;
+        }
+        .container:nth-child(4){
+            animation-delay: 3;
+        }
+        .container:nth-child(5){
+            animation-delay: 4;
+        }
+
+        .left-container{
+            left: 0;
+        }
+
+        .right-container{
+            left: 50%;
+        }
+
+        .Limg{
+            background-color:white;
+            border-radius: 50%;
+            width:35px;
+            height: 35px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: -20px;
+            top: 32px;
+            z-index: 50;
+        }
+
+        .Limgin{
+            background-color: purple;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+        }
+
+        .Rimg{
+            background-color:white;
+            border-radius: 50%;
+            width:35px;
+            height: 35px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: -20px;
+            top: 32px;
+            z-index: 50;
+        }
+
+        .Rimgin{
+            background-color: purple;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+           
+        }
+
+        .timeline::after{
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 100%;
+            background-color: white;
+            top: 0;
+            left: 50%;
+            margin-left: -3px;
+            z-index: -1;
+            animation: moveline 6s linear forwards;
+        }
+
+        @keyframes moveline {
+            0%{
+                height: 0;
+            }
+
+            100%{
+                height: 100%;
+            }
+        }
+
+        .text-box h2{
+            font-weight: 600;
+        }
+
+        .text-box small{
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .left-arrow{
+            height: 0;
+            width: 0;
+            position: absolute;
+            top: 28px;
+            z-index: 1;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 16px solid white;
+            right: -15px;
+        }
+
+        .right-arrow{
+            height: 0;
+            width: 0;
+            position: absolute;
+            top: 28px;
+            z-index: 1;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-right: 15px solid white;
+            left: -15px;;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="timeline">
+        <div class="container left-container">
+            <div class="Limg">
+                <div class="Limgin"></div>
+            </div>
+            <div class="text-box">
+                <h2>About</h2>
+                <small>2019-20</small>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, neque a blanditiis praesentium corporis velit sapiente possimus unde, repellat, quia enim laudantium incidunt deleniti corrupti et non hic vitae. Sequi.</p>
+                <span class="left-arrow"></span>
+            </div>
+        </div>
+
+        <div class="container right-container">
+            <div class="Rimg">
+                <div class="Rimgin"></div>
+            </div>
+            <div class="text-box">
+                <h2>Skill</h2>
+                <small>2019-20</small>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, neque a blanditiis praesentium corporis velit sapiente possimus unde, repellat, quia enim laudantium incidunt deleniti corrupti et non hic vitae. Sequi.</p>
+                <span class="right-arrow"></span>
+            </div>
+        </div>
+        
+        <div class="container left-container">
+            <div class="Limg">
+                <div class="Limgin"></div>
+            </div>
+            <div class="text-box">
+                <h2>Education</h2>
+                <small>2019-20</small>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, neque a blanditiis praesentium corporis velit sapiente possimus unde, repellat, quia enim laudantium incidunt deleniti corrupti et non hic vitae. Sequi.</p>
+                <span class="left-arrow"></span>
+            </div>
+        </div>
+
+        <div class="container right-container">
+            <div class="Rimg">
+                <div class="Rimgin"></div>
+            </div>
+            <div class="text-box">
+                <h2>Projects</h2>
+                <small>2019-20</small>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, neque a blanditiis praesentium corporis velit sapiente possimus unde, repellat, quia enim laudantium incidunt deleniti corrupti et non hic vitae. Sequi.</p>
+                <span class="right-arrow"></span>
+            </div>
+        </div>
+
+        <div class="container left-container">
+            <div class="Limg">
+                <div class="Limgin"></div>
+            </div>
+            <div class="text-box">
+                <h2>Contanct</h2>
+                <small>2019-20</small>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, neque a blanditiis praesentium corporis velit sapiente possimus unde, repellat, quia enim laudantium incidunt deleniti corrupti et non hic vitae. Sequi.</p>
+                <span class="left-arrow"></span>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #2e364a;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 1200px auto;
+            margin: 100px auto;
+        }
+
+        .text-box {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        .container {
+            padding: 10px 50px;
+            position: relative;
+            width: 50%;
+            opacity: 0;
+            transform: translateY(-30px);
+            animation: movedown 1s linear forwards;
+        }
+
+        @keyframes movedown {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+
+        .container:nth-of-type(1) { animation-delay: 0s; }
+        .container:nth-of-type(2) { animation-delay: 1s; }
+        .container:nth-of-type(3) { animation-delay: 2s; }
+        .container:nth-of-type(4) { animation-delay: 3s; }
+        .container:nth-of-type(5) { animation-delay: 4s; }
+
+        .left-container {
+            left: 0;
+        }
+
+        .right-container {
+            left: 50%;
+        }
+
+        .Limg, .Rimg {
+            background-color: white;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 32px;
+            z-index: 50;
+        }
+
+        .Limg { right: -20px; }
+        .Rimg { left: -20px; }
+
+        .Limgin, .Rimgin {
+            background-color: purple;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 100%;
+            background-color: white;
+            top: 0;
+            left: 50%;
+            margin-left: -3px;
+            z-index: -1;
+            animation: moveline 5s linear forwards;
+        }
+
+        @keyframes moveline {
+            0% { height: 0; }
+            100% { height: 100%; }
+        }
+
+        .text-box h2 {
+            font-weight: 600;
+        }
+
+        .text-box small {
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .left-arrow, .right-arrow {
+            height: 0;
+            width: 0;
+            position: absolute;
+            top: 28px;
+            z-index: 1;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+        }
+
+        .left-arrow {
+            border-left: 16px solid white;
+            right: -15px;
+        }
+
+        .right-arrow {
+            border-right: 15px solid white;
+            left: -15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="timeline">
+        <div class="container left-container">
+            <div class="Limg"><div class="Limgin"></div></div>
+            <div class="text-box">
+                <h2>Hindu Higher Secondary School</h2>
+                <small>2020-21</small>
+
+                <h3>Grade:93.2%</h3>
+                <p>
+                    Scoring 93.2% in the 10th standard reflects strong academic performance, dedication, and consistency. 
+                    This achievement highlights a solid foundation for future studies and career growth, demonstrating both discipline and 
+                    perseverance. It serves as a motivation to strive for further success in upcoming challenges.
+                </p>
+                <span class="left-arrow"></span>
+            </div>
+        </div>
+
+        <div class="container right-container">
+            <div class="Rimg"><div class="Rimgin"></div></div>
+            <div class="text-box">
+                <h2>Skill</h2>
+                <small>2019-20</small>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <span class="right-arrow"></span>
+            </div>
+        </div>
+
+        <div class="container left-container">
+            <div class="Limg"><div class="Limgin"></div></div>
+            <div class="text-box">
+                <h2>Education</h2>
+                <small>2019-20</small>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <span class="left-arrow"></span>
+            </div>
+        </div>
+
+        <div class="container right-container">
+            <div class="Rimg"><div class="Rimgin"></div></div>
+            <div class="text-box">
+                <h2>Projects</h2>
+                <small>2019-20</small>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <span class="right-arrow"></span>
+            </div>
+        </div>
+
+        <div class="container left-container">
+            <div class="Limg"><div class="Limgin"></div></div>
+            <div class="text-box">
+                <h2>Contact</h2>
+                <small>2019-20</small>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <span class="left-arrow"></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
