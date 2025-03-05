@@ -10,9 +10,10 @@ menu.addEventListener('click', () => {
 });
 
 
-let typed = new Typed(".auto-type",{
-    strings: ["Programmer","Developer"],
-    typeSpeed:150,
-    backSpeed:150,
-    looped:true
-})
+let typed = new Typed(".auto-type", {
+    strings: ["Programmer", "Developer"],
+    typeSpeed: 100,
+    backSpeed: 30,
+    loop: true,
+    cursorChar: "_" 
+});
