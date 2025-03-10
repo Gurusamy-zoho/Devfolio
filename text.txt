@@ -1,0 +1,103 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <style>
+
+        body{
+            background-color:gray;
+        }
+        .web-skill span{
+            border: 1px solid white;
+            color: white;
+        }
+
+        .skill{
+            display: flex;
+
+        }
+
+        .other-skill{
+            width: 45%;
+            height: fit-content;
+            margin: 20px;
+            border: 1px solid white;
+            background-color: black;
+           
+        }
+
+        .web-skill{
+          width: 45%;
+          height: fit-content;
+          margin: 20px;
+          border: 1px solid white;
+          background-color: black;
+          border-radius: 10px;
+
+          
+        }
+
+        .web-skill-box{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            
+        }
+
+        .web-skill h1{
+            color: white;
+            font: 600;
+        }
+
+        .other-skill h1{
+            color: white;
+            font: 600;
+        }
+
+        .heading{
+            text-align: center;
+        }
+
+        .icon{
+           
+        }
+
+    </style>
+</head>
+<body>
+    <div class="skillContainer">
+        <div>
+            <div class="heading">
+                <h1>Skills</h1>
+                <p>Here are some of my skills on which I have learnt.</p>
+            </div>
+            
+            <div class="skill">
+                <div class="web-skill">
+                    <h1>Web-Develop</h1>
+                    <div class="web-skill-box">
+                        <span><i class="devicon-python-plain">PYTHON</i> </span>
+                        <span><i class="devicon-java-plain">JAVA</i></span> 
+                        <span><i class="devicon-javascript-plain">JS</i></span>
+                        <span><i class="devicon-html5-plain">HTML</i></span>
+                        <span><i class="devicon-css3-plain">CSS</i></span>
+                        <span><i class="devicon-mysql-plain">MYSQL</i></span>
+                    </div>
+                </div>
+                <div class="other-skill">
+                   <h1>Other tools</h1>
+                   <span><i class="devicon-git-plain">Git</i></span>
+                   <span><i class="devicon-github-original">Github</i></span>
+                   <span><i class="devicon-vscode-plain">Vscode</i></span>
+                   <span><i class="devicon-vercel-original">Vercel</i></span>
+                   <span><i class="devicon-postman-plain">Postman</i></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html> -->

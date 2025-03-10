@@ -257,7 +257,7 @@
         }
 
         body {
-            background-color: #2e364a;
+            background-color:black;
         }
 
         .timeline {
@@ -268,10 +268,11 @@
 
         .text-box {
             padding: 20px 30px;
-            background-color: white;
+            background-color: rgb(31, 31, 46);
             position: relative;
             border-radius: 6px;
             font-size: 15px;
+            color: white;
         }
 
         .container {
@@ -325,7 +326,7 @@
         .Rimg { left: -20px; }
 
         .Limgin, .Rimgin {
-            background-color: purple;
+            background-color:rgb(98,0,234);
             border-radius: 50%;
             width: 32px;
             height: 32px;
@@ -336,12 +337,12 @@
             position: absolute;
             width: 6px;
             height: 100%;
-            background-color: white;
+            background-color: rgb(98,0,234);
             top: 0;
             left: 50%;
             margin-left: -3px;
             z-index: -1;
-            animation: moveline 5s linear forwards;
+            animation: moveline 4s linear forwards;
         }
 
         @keyframes moveline {
@@ -369,27 +370,62 @@
         }
 
         .left-arrow {
-            border-left: 16px solid white;
+            border-left: 16px solid rgb(31, 31, 46);
             right: -15px;
         }
 
         .right-arrow {
-            border-right: 15px solid white;
+            border-right: 15px solid rgb(31, 31, 46);
             left: -15px;
         }
+
+        .text-box .year{
+            color: grey;
+            margin-bottom: 20px;
+    
+        }
+
+        .text-box small{
+          font-size: 16px;
+          color: grey;
+        }
+
+        .text-box .grade{
+            margin-bottom: 10px;
+        }
+        #education-heading{
+            font-weight: 900;
+            color: white;
+
+        }
+
+        #education-para{
+          color: white;   
+        }
+
+       .education-heading-div{
+        text-align: center;
+       }
+
     </style>
 </head>
 <body>
-    <div class="timeline">
+
+    <div class="education-heading-div">
+        <h1 id="education-heading">Education</h1>
+        <p id="education-para">My education journey has shapped my skills and knowledge</p>
+    </div>
+    <div class="timeline">    
         <div class="container left-container">
             <div class="Limg"><div class="Limgin"></div></div>
             <div class="text-box">
                 <h2>Hindu Higher Secondary School</h2>
-                <small>2020-21</small>
-
-                <h3>Grade:93.2%</h3>
+                <small>10th Grade</small>
+                <br>
+                <h3 class="year">2021-2022</h3>
+                <h3 class="grade">Grade : 93%</h3>
                 <p>
-                    Scoring 93.2% in the 10th standard reflects strong academic performance, dedication, and consistency. 
+                    10th standard reflects strong academic performance, dedication, and consistency. 
                     This achievement highlights a solid foundation for future studies and career growth, demonstrating both discipline and 
                     perseverance. It serves as a motivation to strive for further success in upcoming challenges.
                 </p>
@@ -400,9 +436,14 @@
         <div class="container right-container">
             <div class="Rimg"><div class="Rimgin"></div></div>
             <div class="text-box">
-                <h2>Skill</h2>
-                <small>2019-20</small>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2>Hindu Higher Secondary School</h2>
+                <small>12th Grade</small>
+                <br>
+                <h3 class="year">2023-2024</h3>
+                <h3 class="grade">Grade : 84%</h3>
+                <p>I completed my 12th standard with 84% in Bio-Maths, but my passion lies in Computer Science and Mathematics.
+                    I am eager to expand my knowledge in CS-related fields 
+                    and apply my problem-solving skills to programming and technology</p>
                 <span class="right-arrow"></span>
             </div>
         </div>
@@ -410,9 +451,14 @@
         <div class="container left-container">
             <div class="Limg"><div class="Limgin"></div></div>
             <div class="text-box">
-                <h2>Education</h2>
-                <small>2019-20</small>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2>National Means-cum-Merit Scholarship</h2>
+                <small>8th Grade</small>
+                <br>
+                <h3 class="year">2019-20</h3>
+                <h3 class="grade">State ranking : 4th</h3>
+                <p>I have always been passionate about challenging myself through competitive exams. In 8th standard, 
+                    I secured State 4th rank and District 1st rank in the NMMS Talent Exam, 
+                    showcasing my problem-solving skills and dedication to academic excellence.<p>
                 <span class="left-arrow"></span>
             </div>
         </div>
@@ -420,22 +466,20 @@
         <div class="container right-container">
             <div class="Rimg"><div class="Rimgin"></div></div>
             <div class="text-box">
-                <h2>Projects</h2>
-                <small>2019-20</small>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2>Tamil Nadu Rural Students Talent Search Examination </h2>
+                <small>9th Grade</small>
+                <br>
+                <h3 class="year">2020-2021</h3>
+                <h3 class="grade">State ranking : 1st</h3>
+                <p>In 9th standard, I secured State 1st rank in a Trust Exam, demonstrating my strong academic foundation, problem-solving abilities, 
+                    and commitment to excellence in competitive exams. This achievement reflects my ability to think critically under 
+                    pressure and my passion for continuous learning. 
+                    I thrive on challenges and always strive to push my intellectual boundaries to achieve higher goals..</p>
                 <span class="right-arrow"></span>
             </div>
         </div>
 
-        <div class="container left-container">
-            <div class="Limg"><div class="Limgin"></div></div>
-            <div class="text-box">
-                <h2>Contact</h2>
-                <small>2019-20</small>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <span class="left-arrow"></span>
-            </div>
-        </div>
-    </div>
+    
+</div>
 </body>
 </html>

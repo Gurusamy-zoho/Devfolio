@@ -7,7 +7,7 @@
 
 body{
     /* background: linear-gradient(to bottom,#2a2a6b, #020024, #09092a); */
-    background: linear-gradient(to bottom,#030029, #4b4b8f, #1c1c4a);
+    background: linear-gradient(to bottom,#030029,#4b4b8f,#1c1c4a,#030029 );
 
 
 
@@ -134,7 +134,7 @@ body{
             position: relative;
             opacity: 0;
             transform: translateY(-30px);
-            animation: movedown 1s linear forwards;
+            animation: movedown 2s linear forwards;
         }
 
         @keyframes movedown {
@@ -149,10 +149,10 @@ body{
         }
 
         .container:nth-of-type(1) { animation-delay: 0s; }
-        .container:nth-of-type(2) { animation-delay: 1s; }
-        .container:nth-of-type(3) { animation-delay: 2s; }
-        .container:nth-of-type(4) { animation-delay: 3s; }
-        .container:nth-of-type(5) { animation-delay: 4s; }
+        .container:nth-of-type(2) { animation-delay: 2s; }
+        .container:nth-of-type(3) { animation-delay: 4s; }
+        .container:nth-of-type(4) { animation-delay: 6s; }
+        .container:nth-of-type(5) { animation-delay: 8s; }
 
         .left-container {
             left: -50%;
@@ -195,7 +195,7 @@ body{
             left: 50%;
             margin-left: -3px;
             z-index: -1;
-            animation: moveline 4s linear forwards;
+            animation: moveline 10s linear forwards;
         }
 
         @keyframes moveline {
@@ -263,3 +263,5 @@ body{
         margin-top: 100px;
        
        }
+
+

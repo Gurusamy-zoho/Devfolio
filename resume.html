@@ -1,0 +1,112 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+       
+        .container{
+            display: flex;
+            
+        }
+
+        .leftside{
+            background-color: rgba(185, 185, 24, 0.581);
+
+        }
+
+        .rightside{
+           background-color:white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="leftside">
+            <div class="name-roll">
+                <h2>Gurusamy</h1>
+                <p>Web Developer</p>
+            </div>
+        </div>
+        <div class="rightside">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta optio molestiae earum culpa, consequuntur fugiat possimus autem aperiam harum incidunt inventore accusantium beatae accusamus explicabo amet velit. Distinctio, possimus eum.</div>
+    </div>
+    
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Filter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center py-10">
+
+    <!-- Filter Buttons -->
+    <div class="mb-6 space-x-4">
+        <button class="filter-btn px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700" data-category="all">All</button>
+        <button class="filter-btn px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700" data-category="website">Website</button>
+        <button class="filter-btn px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700" data-category="webapp">Web App</button>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-4/5">
+        <!-- Website Projects -->
+        <div class="project-card website bg-white p-4 shadow-lg rounded-lg">
+            <h3 class="text-xl font-semibold">Portfolio Website</h3>
+            <p class="text-gray-600">A personal portfolio showcasing projects.</p>
+        </div>
+
+        <div class="project-card website bg-white p-4 shadow-lg rounded-lg">
+            <h3 class="text-xl font-semibold">Business Landing Page</h3>
+            <p class="text-gray-600">A responsive business website.</p>
+        </div>
+
+        <!-- Web App Projects -->
+        <div class="project-card webapp bg-white p-4 shadow-lg rounded-lg">
+            <h3 class="text-xl font-semibold">Weather App</h3>
+            <p class="text-gray-600">A real-time weather forecast app.</p>
+        </div>
+
+        <div class="project-card webapp bg-white p-4 shadow-lg rounded-lg">
+            <h3 class="text-xl font-semibold">To-Do List</h3>
+            <p class="text-gray-600">A task management app with MySQL.</p>
+        </div>
+
+        <div class="project-card webapp bg-white p-4 shadow-lg rounded-lg">
+            <h3 class="text-xl font-semibold">News App</h3>
+            <p class="text-gray-600">A news application fetching live updates.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript for Filtering -->
+    <script>
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const projects = document.querySelectorAll(".project-card");
+
+        filterButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                const category = button.getAttribute("data-category");
+
+                projects.forEach(project => {
+                    if (category === "all" || project.classList.contains(category)) {
+                        project.style.display = "block";
+                    } else {
+                        project.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

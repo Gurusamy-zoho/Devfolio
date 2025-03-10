@@ -10,21 +10,22 @@
 
 
 </head>
-<body>
+<body class="">
+
 
     <!-- ✅ Navigation -->
-    <nav class=" about fixed w-full top-0 left-0 flex py-4 px-5 justify-between bg-white/20 backdrop-blur text-white z-50">
+    <nav class=" fixed w-full top-0 left-0 flex py-4 px-5 justify-between bg-white/20 backdrop-blur text-white z-50">
         <h1 class="text-xl font-bold">Devfolio</h1>
         
         <!-- ✅ Desktop Menu -->
         <ul class="hidden sm:flex gap-5">
-            <li class="cursor-pointer hover:text-blue-300"><a href="#skill">About</a></li>
+            <li class="cursor-pointer hover:text-blue-300"><a href="#about">About</a></li>
             <li class="cursor-pointer hover:text-blue-300">Skills</li>
             <li class="cursor-pointer hover:text-blue-300">Projects</li>
             <li class="cursor-pointer hover:text-blue-300">Education</li>
             <li class="cursor-pointer hover:text-blue-300">Contact</li>
         </ul>
-        <a href="#" class="hidden sm:flex ring-2 ring-white rounded-lg px-3 py-1">Github</a>
+        <a href="https://github.com/Gurusamy-zoho" class="hidden sm:flex ring-2 ring-white rounded-lg px-3 py-1">Github</a>
 
         <!-- ✅ Mobile Menu Button -->
         <div class="menu flex flex-col gap-1 pt-1 sm:hidden cursor-pointer">
@@ -38,13 +39,13 @@
             <li class="cursor-pointer hover:text-blue-700"><a href=".about">About</a></li>
             <li class="cursor-pointer hover:text-blue-700">Skills</li>
             <li class="cursor-pointer hover:text-blue-700">Projects</li>
-            <a href=".timeline" class="cursor-pointer hover:text-blue-700">Education</a>
+            <a href="#education" class="cursor-pointer hover:text-blue-700">Education</a>
             <li class="cursor-pointer hover:text-blue-700">Contact</li>
         </ul>
     </nav>
 
     
-     <section class="flex max-w-full flex-col sm:flex-row items-center justify-center py-20 px-20 bg-white-900 ">
+     <section class="flex max-w-full flex-col sm:flex-row items-center justify-center py-20 px-20 bg-white-900 " id="about">
         
         <div class="max-w-full sm:w-1/2 text-center sm:text-left">
             <h1 class="text-5xl font-bold text-white py-3">Hi, I am</h1>
@@ -55,13 +56,13 @@
                 Collaborative and committed to quality, I thrive in dynamic teams. Eager to contribute creativity and 
                 bring innovative ideas to life.
             </p>
-            <a href="#" class="inline-block mt-5 py-2 px-5 text-white bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 rounded-lg shadow-md hover:opacity-90 transition">
+            <!-- <a href="#" class="inline-block mt-5 py-2 px-5 text-white bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 rounded-lg shadow-md hover:opacity-90 transition">
                 Check Resume
-            </a>
+            </a> -->
         </div>
 
         
-        <div class="w-full sm:w-1/2 flex justify-center mt-10 sm:mt-0">
+        <div class=" sm:w-1/2 flex justify-center mt-10 sm:mt-0">
             <img src="japense art.jpg"  class="w-48 h-48 sm:w-64 sm:h-64 rounded-full shadow-lg">
         </div>
     </section>
@@ -101,7 +102,7 @@
     
 </div>
 
-<div class="education bg-aliceblue-800">
+<div class="education bg-aliceblue-800" id="education">
         <div class="education-heading-div">
             <h1 id="education-heading">Education</h1>
             <p id="education-para">My education journey has shapped my skills and knowledge</p>
@@ -173,6 +174,205 @@
             </div>
     
     </div>
+
+    <div class="Projects_Div bg-nav-900">
+        <div id="Project-heading" class="text-center">
+                <h1 class="text-4xl font-bold text-white py-4">Projects</h1>
+                <p class="text-white">I have worked on a wide range of projects, from websites to web apps those are,</p>
+        </div>
+
+        <div class="search-buttons flex justify-center my-10">
+            <button class="btn text-purple-500 border border-white px-5 btn" id="allbtn" data-category="all">ALL</button>
+            <button class="btn text-purple-500  border border-white px-5 btn" id="websitebtn" data-category="website">WEBSITE</button>
+            <button class="btn text-purple-500 border border-white px-5 btn" id="webappbtn" data-category="web-app">WEB-APP</button>
+        </div>
+
+
+        <section class=" py-10">
+            <div class="container mx-auto text-center">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Project 1 -->
+                    <div class="project-card web-app bg-white p-4 shadow-lg rounded-lg">
+                        <img src="Screenshot (75).png" alt="Project 1" class="w-full h-48 object-cover rounded-lg">
+                        <h3 class="text-xl font-semibold mt-4">Weatherapp 🌤️</h3>
+                        <p class="text-gray-600 flex">A simple and responsive weather application that provides real-time weather updates, temperature, humidity, and wind speed for any location. Users can search for a city and get accurate weather forecasts using API integration. Built with HTML, CSS, JavaScript, and OpenWeather API.</p>
+                        <a href="https://weather-detector-lilac.vercel.app/" target="_blank" class="text-blue-500 hover:underline">
+                            View Project →
+                        </a>
+                    </div>
+        
+                    <!-- Project 2 -->
+                    <div class="project-card web-app bg-white p-4 shadow-lg rounded-lg">
+                        <img src="Screenshot (78).png" alt="Project 2" class="w-full h-48 object-cover rounded-lg">
+                        <h3 class="text-xl font-semibold mt-4">News App 📰</h3>
+                        <p class="text-gray-600">A dynamic news application that fetches and displays the latest headlines from various categories like technology, sports, business, and entertainment. Users can search for news articles and read summaries with source links. Built using HTML, CSS, JavaScript, and integrated with the News API for real-time updates.</p>
+                        <a href="https://news-app-five-self.vercel.app/" target="_blank" class="text-blue-500 hover:underline">
+                            View Project →
+                        </a>
+                    </div>
+
+                    <div class="project-card website bg-white p-4 shadow-lg rounded-lg">
+                        <img src="Screenshot (78).png" alt="Project 3" class="w-full h-48 object-cover rounded-lg">
+                        <h3 class="text-xl font-semibold mt-4">Calculator App 🧮</h3>
+                        <p class="text-gray-600">A simple and user-friendly calculator that performs basic arithmetic operations like addition, subtraction, multiplication, and division. It features a clean UI with responsive design and real-time calculations. Built using HTML, CSS, and JavaScript for smooth functionality.</p>
+                        <a href="https://calculator-app-virid-gamma.vercel.app/" target="_blank" class="text-blue-500 hover:underline">
+                            View Project →
+                        </a>
+                    </div>
+
+                    <div class="project-card web-app bg-white p-4 shadow-lg rounded-lg">
+                        <img src="Screenshot (78).png" alt="Project 4" class="w-full h-48 object-cover rounded-lg">
+                        <h3 class="text-xl font-semibold mt-4">LexiFind🔍</h3>
+                        <p class="text-gray-600">LexiFind is an intelligent dictionary and search tool that helps users find word meanings, synonyms, antonyms, and translations instantly. It features a fast and user-friendly interface with voice search and auto-suggestions. Ideal for students, writers, and language learners. Built using HTML, CSS, JavaScript, and API integration for real-time word data.</p>
+                        <a href="https://lexi-find-iota.vercel.app/" target="_blank" class="text-blue-500 hover:underline">
+                            View Project →
+                        </a>
+                    </div>
+
+
+                       <div class="project-card website bg-white p-4 shadow-lg rounded-lg">
+                        <img src="Screenshot (78).png" alt="Project 5" class="w-full h-48 object-cover rounded-lg">
+                        <h3 class="text-xl font-semibold mt-4">Guess the Number Game 🎯</h3>
+                        <p class="text-gray-600">A fun and interactive number-guessing game where the player tries to guess a randomly generated number within a given range. The game provides hints like "Too High" or "Too Low" to guide the player. Features include a score tracker and difficulty levels. Built using HTML, CSS, and JavaScript for an engaging user experience.</p>
+                        <a href="https://guessthenumber-webapp.vercel.app/" target="_blank" class="text-blue-500 hover:underline">
+                            View Project →
+                        </a>
+                    </div>
+
+
+                    <div class="project-card website bg-white p-4 shadow-lg rounded-lg">
+                        <img src="Screenshot (78).png" alt="Project 6" class="w-full h-48 object-cover rounded-lg">
+                        <h3 class="text-xl font-semibold mt-4">Numbers Game 🎮</h3>
+                        <p class="text-gray-600">A fun and interactive game that challenges players with number-based puzzles. It can involve arithmetic challenges, number sequences, or guessing games where users solve problems within a time limit. Ideal for improving math skills and logical thinking. Built using HTML, CSS, and JavaScript for an engaging and responsive experience</p>
+                        <a href="https://mathematic-game-three.vercel.app/" target="_blank" class="text-blue-500 hover:underline">
+                            View Project →
+                        </a>
+                    </div>
+
+                    <div class="project-card website bg-white p-4 shadow-lg rounded-lg">
+                        <img src="Screenshot (78).png" alt="Project 7" class="w-full h-48 object-cover rounded-lg">
+                        <h3 class="text-xl font-semibold mt-4">Digital clock⏰</h3>
+                        <p class="text-gray-600">
+                            A sleek and real-time digital clock that displays the current time in HH:MM:SS format with AM/PM. It updates every second and can show the date, day, and different time zones. Designed with a modern UI using HTML, CSS, and JavaScript, it can be customized with different themes and styles.</p>
+                        <a href="https://digitalclock-app-gold.vercel.app/" target="_blank" class="text-blue-500 hover:underline">
+                            View Project →
+                        </a>
+                    </div>
+
+
+                    <div class="project-card website bg-white p-4 shadow-lg rounded-lg">
+                        <img src="Screenshot (78).png" alt="Project 8" class="w-full h-48 object-cover rounded-lg">
+                        <h3 class="text-xl font-semibold mt-4">Mouse Position Tracker 🖱️📍</h3>
+                        <p class="text-gray-600">
+                            A simple and interactive web application that tracks and displays the current X and Y coordinates of the user's mouse pointer in real-time. It updates dynamically as the mouse moves and can be used for debugging, gaming, or learning event handling. Built using HTML, CSS, and JavaScript for smooth and responsive tracking. </p>
+                        <a href="https://mouseposition-game.vercel.app/" target="_blank" class="text-blue-500 hover:underline">
+                            View Project →
+                        </a>
+                    </div>
+
+
+                    <div class="project-card web-app bg-white p-4 shadow-lg rounded-lg">
+                        <img src="Screenshot (78).png" alt="Project 9" class="w-full h-48 object-cover rounded-lg">
+                        <h3 class="text-xl font-semibold mt-4">Get Users App 👥</h3>
+                        <p class="text-gray-600">A web application that fetches and displays user data from an API (e.g., Random User API or JSONPlaceholder). It shows user details like name, email, profile picture, and location in a clean, responsive UI. Useful for learning API integration and working with dynamic data. Built using HTML, CSS, JavaScript, and Fetch API. </p>
+                        <a href="https://getdata-from-api-snowy.vercel.app/" target="_blank" class="text-blue-500 hover:underline">
+                            View Project →
+                        </a>
+                    </div>
+
+
+                    <div class="project-card website bg-white p-4 shadow-lg rounded-lg">
+                        <img src="Screenshot (78).png" alt="Project 10" class="w-full h-48 object-cover rounded-lg">
+                        <h3 class="text-xl font-semibold mt-4">To-Do List App 📝</h3>
+                        <p class="text-gray-600">A simple task management web app built using Flask (Python) and MySQL. Users can add, delete, and mark tasks as completed, with data stored in a MySQL database. The app features a clean UI, server-side processing, and dynamic task updates. </p>
+                        <a href="https://yourprojectlink.com" target="_blank" class="text-blue-500 hover:underline">
+                            View Project →
+                        </a>
+                    </div>
+
+                    <div class="project-card website bg-white p-4 shadow-lg rounded-lg">
+                        <img src="Screenshot (78).png" alt="Project 11" class="w-full h-48 object-cover rounded-lg">
+                        <h3 class="text-xl font-semibold mt-4">BMI Calculator ⚖️</h3>
+                        <p class="text-gray-600">A simple Body Mass Index (BMI) calculator that allows users to input their weight and height to determine their BMI category (Underweight, Normal, Overweight, or Obese). </p>
+                        <a href="https://bmi-calculator-2024.vercel.app/" target="_blank" class="text-blue-500 hover:underline">
+                            View Project →
+                        </a>
+                    </div>
+
+                    <div class="project-card website bg-white p-4 shadow-lg rounded-lg">
+                        <img src="Screenshot (78).png" alt="Project 12" class="w-full h-48 object-cover rounded-lg">
+                        <h3 class="text-xl font-semibold mt-4">Stopwatch⏲️</h3>
+                        <p class="text-gray-600">Here’s a simple stopwatch using HTML, CSS, and JavaScript. It includes start, stop, and reset functionalities. </p>
+                        <a href="https://stopwatch-steel-ten.vercel.app/" target="_blank" class="text-blue-500 hover:underline">
+                            View Project →
+                        </a>
+                    </div>
+
+                    <div class="project-card web-app bg-white p-4 shadow-lg rounded-lg">
+                        <img src="Screenshot (78).png" alt="Project 13" class="w-full h-48 object-cover rounded-lg">
+                        <h3 class="text-xl font-semibold mt-4">Amazon e-commerce 🛒</h3>
+                        <p class="text-gray-600">This Amazon eCommerce Web App is built with HTML, CSS, JavaScript, Python (Flask), MySQL, and the Amazon API. It includes user authentication, product listings, a shopping cart, and secure checkout. The backend manages user data and transactions, while the frontend ensures a smooth shopping experience. Amazon API integration enables dynamic product updates.  </p>
+                        <a href="" target="_blank" class="text-blue-500 hover:underline">
+                            View Project →
+                        </a>
+                    </div>
+
+
+                    <div class="project-card web-app bg-white p-4 shadow-lg rounded-lg">
+                        <img src="Screenshot (78).png" alt="Project 14" class="w-full h-48 object-cover rounded-lg">
+                        <h3 class="text-xl font-semibold mt-4">DivFusion ⚙️</h3>
+                        <p class="text-gray-600">This Amazon eCommerce Web App is built with HTML, CSS, JavaScript, Python (Flask), MySQL, and the Amazon API. It includes user authentication, product listings, a shopping cart, and secure checkout. The backend manages user data and transactions, while the frontend ensures a smooth shopping experience. Amazon API integration enables dynamic product updates.  </p>
+                        <a href="https://dev-fusion-one.vercel.app/" target="_blank" class="text-blue-500 hover:underline">
+                            View Project →
+                        </a>
+                    </div>
+
+
+                    <div class="project-card website bg-white p-4 shadow-lg rounded-lg">
+                        <img src="Screenshot (78).png" alt="Project 15" class="w-full h-48 object-cover rounded-lg">
+                        <h3 class="text-xl font-semibold mt-4">Pomodoro timer 🍅</h3>
+                        <p class="text-gray-600">This Amazon eCommerce Web App is built with HTML, CSS, JavaScript, Python (Flask), MySQL, and the Amazon API. It includes user authentication, product listings, a shopping cart, and secure checkout. The backend manages user data and transactions, while the frontend ensures a smooth shopping experience. Amazon API integration enables dynamic product updates.  </p>
+                        <a href="" target="_blank" class="text-blue-500 hover:underline">
+                            View Project →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-10 text-white">
+            <div class="contact-container mx-auto text-center">
+                <h2 class="text-4xl font-bold">Contact</h2>
+                <p class="mt-3 text-gray-400">Feel free to reach out for collaborations or just a friendly hello!</p>
+        
+                <form id="contactForm" class="mt-6 max-w-lg mx-auto bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="mb-4">
+                        <label for="name" class="block text-left text-gray-300">Name</label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-2 text-black rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+        
+                    <div class="mb-4">
+                        <label for="email" class="block text-left text-gray-300">Email</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-2 text-black rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+        
+                    <div class="mb-4">
+                        <label for="subject" class="block text-left text-gray-300">Subject</label>
+                        <input type="text" id="subject" name="subject" required class="w-full px-4 py-2 text-black rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+        
+                    <div class="mb-4">
+                        <label for="message" class="block text-left text-gray-300">Message</label>
+                        <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 text-black rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+                    </div>
+        
+                    <button type="submit" class="email-form-button w-full py-2 mt-3 bg-purple-500 hover:bg-purple-600 text-white font-semibold rounded-lg transition">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+        
    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
 
