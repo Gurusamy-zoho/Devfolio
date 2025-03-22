@@ -19,32 +19,19 @@ let typed = new Typed(".auto-type", {
 });
 
 
-// document.getElementById("allbtn").addEventListener("click",function(){
-//         this.classList.toggle("bg-purple-500");
-//         this.classList.toggle("text-white");
-// })
-
-// document.getElementById("websitebtn").addEventListener("click",function(){
-//     this.classList.toggle("bg-purple-500");
-//     this.classList.toggle("text-white");
-// })
-
-// document.getElementById("webappbtn").addEventListener("click",function(){
-//     this.classList.toggle("bg-purple-500");
-//     this.classList.toggle("text-white");
-// })
-
 
 const buttons = document.querySelectorAll("button");
 const allbtn = document.getElementById("allbtn");
-allbtn.forEach(allbtn => allbtn.classList.add("bg-purple-500", "text-white"));
+
+if (allbtn) {
+  allbtn.classList.add("bg-purple-500", "text-white");
+}
 
 buttons.forEach(button => {
   button.addEventListener("click", () => {
-    // Reset all buttons
+
     buttons.forEach(btn => btn.classList.remove("bg-purple-500", "text-white"));
 
-    // Apply new styles to clicked button
     button.classList.add("bg-purple-500", "text-white");
   });
 });
@@ -70,7 +57,7 @@ filterButtons.forEach(button => {
 
 
 document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevents form submission
+    event.preventDefault(); 
     
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
