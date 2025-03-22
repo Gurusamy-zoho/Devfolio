@@ -36,6 +36,8 @@ let typed = new Typed(".auto-type", {
 
 
 const buttons = document.querySelectorAll("button");
+const allbtn = document.getElementById("allbtn");
+allbtn.forEach(allbtn => allbtn.classList.add("bg-purple-500", "text-white"));
 
 buttons.forEach(button => {
   button.addEventListener("click", () => {
@@ -81,3 +83,5 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         alert("Please fill out all fields before submitting.");
     }
 });
+
+
