@@ -7,10 +7,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 
 </head>
-<body class="">
+<body class="scroll-smooth">
 
 
     <!-- ✅ Navigation -->
@@ -19,13 +20,13 @@
         
         <!-- ✅ Desktop Menu -->
         <ul class="hidden sm:flex gap-5">
-            <li class="cursor-pointer hover:text-blue-300"><a href="#about">About</a></li>
-            <li class="cursor-pointer hover:text-blue-300">Skills</li>
-            <li class="cursor-pointer hover:text-blue-300">Projects</li>
-            <li class="cursor-pointer hover:text-blue-300">Education</li>
-            <li class="cursor-pointer hover:text-blue-300">Contact</li>
+            <!-- <li class="cursor-pointer hover:text-purple-500"><a href="#about">About</a></li>
+             <li class="cursor-pointer hover:text-purple-500"><a href="#skills">Skills</a></li>
+            <li class="cursor-pointer hover:text-purple-500"><a href="#education">Education</a></li>
+            <li class="cursor-pointer hover:text-purple-500"><a href="#projects">Projects</a></li>
+            <li class="cursor-pointer hover:text-purple-500"><a href="#contact">Contact</a></li> --> 
         </ul>
-        <a href="https://github.com/Gurusamy-zoho" class="hidden sm:flex ring-2 ring-white rounded-lg px-3 py-1">Github</a>
+        <a href="https://github.com/Gurusamy-zoho" target="_blank" class="hidden sm:flex ring-2 ring-purple-500 rounded-lg px-3 py-1">Github</a>
 
         <!-- ✅ Mobile Menu Button -->
         <div class="menu flex flex-col gap-1 pt-1 sm:hidden cursor-pointer">
@@ -36,16 +37,16 @@
 
         <!-- ✅ Mobile Menu (Animated) -->
         <ul id="mobile-menu" class="absolute bg-white text-black left-[-100%] top-[80px] w-3/4 p-5 flex flex-col gap-5 shadow-lg transition-all duration-300 ease-in-out sm:hidden">
-            <li class="cursor-pointer hover:text-blue-700"><a href=".about">About</a></li>
-            <li class="cursor-pointer hover:text-blue-700">Skills</li>
-            <li class="cursor-pointer hover:text-blue-700">Projects</li>
-            <a href="#education" class="cursor-pointer hover:text-blue-700">Education</a>
-            <li class="cursor-pointer hover:text-blue-700">Contact</li>
-        </ul>
+            <!-- <li class="cursor-pointer hover:text-purple-500"><a href="#about">About</a></li>
+            <li class="cursor-pointer hover:text-purple-500"><a href="#skills">Skills</a></li>
+            <li class="cursor-pointer hover:text-purple-500"><a href="#education">Education</a></li>
+            <li class="cursor-pointer hover:text-purple-500"><a href="#projects">Projects</a></li>
+            <li class="cursor-pointer hover:text-purple-500"><a href="#contact">Contact</a></li> -->
+        </ul>        
     </nav>
 
     
-     <section class="flex max-w-full flex-col sm:flex-row items-center justify-center py-20 px-20 bg-white-900 " id="about">
+     <section class="flex max-w-full flex-col-reverse  sm:flex-row items-center justify-center py-20 px-20 bg-white-900" id="about">
         
         <div class="max-w-full sm:w-1/2 text-center sm:text-left">
             <h1 class="text-5xl font-bold text-white py-3">Hi, I am</h1>
@@ -63,45 +64,49 @@
 
 
         
-        <div class=" sm:w-1/2 flex justify-center mt-10 sm:mt-0">
+        <!-- <div class=" sm:w-1/2 flex justify-center mt-10 sm:mt-0">
             <img src="Portfolio-profile.jpg"  class="w-48 h-48 sm:w-64 sm:h-64 rounded-full shadow-lg border-4 border-purple-500">
-        </div>
+        </div> -->
     </section>
 
 
-    <div class="skillContainer">
-        <div class="heading">
-            <h1>Skills</h1>
+    <div class="skillContainer bg-gray-900 text-white py-10 px-5" id="skills">
+        <div class="heading text-center">
+            <h1 class="text-4xl font-bold">Skills</h1>
         </div>
-        <p class="skill-para">Here are some of my skills that I have learned.</p>
-        <div class="skill">
-            <div class="web-skill">
-                <h1>Web Development</h1>
-                <div class="web-skill-box">
-                    <span><i class="devicon-python-plain"></i> Python</span>
-                    <span><i class="devicon-java-plain"></i> Java</span> 
-                    <span><i class="devicon-javascript-plain"></i> JavaScript</span>
-                    <span><i class="devicon-html5-plain"></i> HTML</span>
-                    <span><i class="devicon-css3-plain"></i> CSS</span>
-                    <span><i class="devicon-mysql-plain"></i> MySQL</span>
+        <p class="skill-para text-center text-lg mt-3">Here are some of my skills that I have learned.</p>
+    
+        <div class="skill flex flex-col md:flex-row justify-center items-start gap-10 mt-8">
+    
+            <!-- Web Development Skills -->
+            <div class="web-skill w-full md:w-1/2 text-center mr-5">
+                <h1 class="text-2xl font-bold mb-3">Web Development</h1>
+                <div class="web-skill-box grid grid-cols-2 sm:grid-cols-3 gap-4 text-lg">
+                    <span class="flex items-center gap-2"><i class="devicon-python-plain"></i> Python</span>
+                    <!-- <span class="flex items-center gap-2"><i class="fas fa-globe"></i> RestAPI</span> -->
+                    <span class="flex items-center gap-2"><i class="devicon-javascript-plain"></i> JavaScript</span>
+                    <span class="flex items-center gap-2"><i class="devicon-html5-plain"></i> HTML</span>
+                    <span class="flex items-center gap-2"><i class="devicon-css3-plain"></i> CSS</span>
+                    <span class="flex items-center gap-2"><i class="devicon-mysql-plain"></i> MySQL</span>
                 </div>
             </div>
-
-            <div class="other-skill">
-                <h1>Other Tools</h1>
-                <div class="web-skill-box">
-                    <span><i class="devicon-git-plain"></i> Git</span>
-                    <span><i class="devicon-github-original"></i> GitHub</span>
-                    <span><i class="devicon-vscode-plain"></i> VS Code</span>
-                    <span><i class="devicon-vercel-original"></i> Vercel</span>
-                    <span><i class="devicon-postman-plain"></i> Postman</span>
-                    <span><i class="devicon-googlecloud-plain"></i>Devtool</span>
-
+    
+            <!-- Other Tools -->
+            <div class="other-skill w-full md:w-1/2 text-center">
+                <h1 class="text-2xl font-bold mb-3">Other Tools</h1>
+                <div class="web-skill-box grid grid-cols-2 sm:grid-cols-3 gap-4 text-lg">
+                    <span class="flex items-center gap-2"><i class="devicon-git-plain"></i> Git</span>
+                    <span class="flex items-center gap-2"><i class="devicon-github-original"></i> GitHub</span>
+                    <span class="flex items-center gap-2"><i class="devicon-vscode-plain"></i> VS Code</span>
+                    <span class="flex items-center gap-2"><i class="devicon-vercel-original"></i> Vercel</span>
+                    <span class="flex items-center gap-2"><i class="devicon-postman-plain"></i> Postman</span>
+                    <span class="flex items-center gap-2"><i class="devicon-googlecloud-plain"></i> Devtool</span>
                 </div>
             </div>
+    
+        </div>
     </div>
     
-</div>
 
 <div class="education bg-aliceblue-800" id="education">
         <div class="education-heading-div">
@@ -176,7 +181,7 @@
     
     </div>
 
-    <div class="Projects_Div bg-nav-900">
+    <div class="Projects_Div bg-nav-900" id="projects">
         <div id="Project-heading" class="text-center">
                 <h1 class="text-4xl font-bold text-white py-4">Projects</h1>
                 <p class="text-white">I have worked on a wide range of projects, from websites to web apps those are,</p>
@@ -373,6 +378,43 @@
                 </form>
             </div>
         </section>
+
+        <!-- <footer class="bg-cover bg-center bg-no-repeat text-white py-10" style="background-image: url('footer-img.jpg');">
+            <div class="container mx-auto flex flex-col items-center text-center space-y-5">
+        
+
+                <h1 class="text-3xl font-bold">Gurusamy G</h1>
+                <div class="flex space-x-5 text-lg">
+                    <a class="hover:text-purple-500" href="#about">About</a>
+                    <a class="hover:text-purple-500" href="#skills">Skills</a>
+                    <a class="hover:text-purple-500" href="#education">Education</a>
+                    <a class="hover:text-purple-500" href="#projects">Projects</a>
+                    <a class="hover:text-purple-500" href="#contact">Contact</a>
+                </div>
+        
+                <div class="flex space-x-5 text-2xl">
+                    <a href="https://github.com/Gurusamy-zoho" target="_blank" class="hover:text-gray-300">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="tel:9159625512" class="hover:text-gray-300">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="https://wa.me/9159625512" target="_blank" class="hover:text-gray-300">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://gurusamysivasankar591@gmail.com" class="hover:text-gray-300">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+
+                    
+                </div>
+        
+                <p class="text-sm mt-5">© 2025 Your Website. All rights reserved.</p>
+        
+            </div>
+        </footer> -->
+        
+
         
    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
