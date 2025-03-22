@@ -65,10 +65,27 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     let message = document.getElementById("message").value;
 
     if (name && email && subject && message) {
-        alert("Your message has been submitted successfully!");
-    } else {
-        alert("Please fill out all fields before submitting.");
-    }
-});
+        if(name){
+            text = `Hello ${name} nice to meet you`
+            const speech = new SpeechSynthesisUtterance(text);
+            speech.lang = "en-GB";
+            speech.rate = 0.9;
+            speech.pitch = 1;
+            speechSynthesis.speak(speech);
+    
+            Swal.fire({
+                title: "Success!",
+                text: "Form Successfully Sent!",
+                icon: "success",
+                confirmButtonText: "Done"
+            });
+
+            setTimeout(() => {
+                const inputs = document.querySelectorAll("#contactForm input, #contactForm textarea");
+                inputs.forEach(input => input.value = "");
+            }, 1000);
+        }
+    } 
+    });
 
 
