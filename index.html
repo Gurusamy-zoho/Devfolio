@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
 </head>
@@ -372,7 +373,7 @@
                         <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 text-black rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
                     </div>
         
-                    <button type="submit" class="email-form-button w-full py-2 mt-3 bg-purple-500 hover:bg-purple-600 text-white font-semibold rounded-lg transition">
+                    <button type="submit" class="email-form-button w-full py-2 mt-3 bg-purple-500 hover:bg-purple-600 text-white font-semibold rounded-lg transition" onclick="speakText()">
                         Send Message
                     </button>
                 </form>
